@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="dark">
 <head>
     <title>Code to prompt</title>
     <style>
@@ -124,7 +124,7 @@
 
                 let language = hljs.highlightAuto(contents).language;
 
-                return `${file.name}\n<pre class="language-${language}">\n\`\`\`\n<code>${contents}</code>\n\`\`\`\n</pre>\n`;
+                return `<h3>${file.name}</h3>\n<pre class="language-${language}">\n\`\`\`\n<code>${contents}</code>\n\`\`\`\n</pre>\n`;
             }));
 
             codeview.innerHTML = outputText.join('\n\n');
@@ -171,6 +171,6 @@
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
 </body>
 </html>
